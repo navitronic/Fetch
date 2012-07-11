@@ -190,7 +190,7 @@ class Server
     public function setOptions($bitmask = 0)
     {
         if (!is_numeric($bitmask))
-            throw Exception('h');
+            throw \Exception('Unable to set options');
 
         $this->options = $bitmask;
     }
